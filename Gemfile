@@ -39,6 +39,9 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'sassc-rails', '>= 2.1.0'
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 4.5'
+gem 'bootstrap-sass-extras', '~> 0.0.2'
+gem 'devise', '~> 4.8'
+gem 'simple_form'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
