@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  firstname: MyString
+  lastname: MyString
+  position: MyString
+  salary: 1
+  admin: 
+  dob: 2021-05-03
+
+two:
+  firstname: MyString
+  lastname: MyString
+  position: MyString
+  salary: 1
+  admin: 
+  dob: 2021-05-03

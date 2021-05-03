@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @category.firstname %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @category.lastname %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @category.position %>
+</p>
+
+<p>
+  <strong>Salary:</strong>
+  <%= @category.salary %>
+</p>
+
+<p>
+  <strong>Admin:</strong>
+  <%= @category.admin %>
+</p>
+
+<p>
+  <strong>Dob:</strong>
+  <%= @category.dob %>
+</p>
+
+<%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %>

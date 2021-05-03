@@ -1,0 +1,18 @@
+<h2>Employee Reg. Form</h2>
+
+<%= simple_form_for(@emp) do |f| %>
+  <div class="form-inputs">
+      <%= f.input :email%>
+    <%= f.input :firstname %>
+    <%= f.input :lastname %>
+    
+    <%= f.input :password %>
+   
+  </div>
+
+
+    <%= f.submit %>
+  
+<% end %>
+
+

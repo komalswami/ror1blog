@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Employee Records</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Position</th>
+      <th>Salary</th>
+      <th>Admin</th>
+      <th>Dob</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead
+
+  <tbody>
+    <% @categories.each do |category| %>
+      <tr>
+        <td><%= category.firstname %></td>
+        <td><%= category.lastname %></td>
+        <td><%= category.position %></td>
+        <td><%= category.salary %></td>
+        <td><%= category.admin %></td>
+        <td><%= category.dob %></td>
+        <td><%= link_to 'Show', category %></td>
+        <td><%= link_to 'Edit', edit_category_path(category) %></td>
+        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Add new emp.', new_category_path %>
