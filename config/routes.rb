@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+  resources :articles
   resources :categories
+  resources :articles do
+    resources :comments
+  end
   devise_for :users
   resources:emp
   root to: 'pages#index'
